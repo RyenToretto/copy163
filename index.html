@@ -1,13 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=0.5, user-scalable=no">
     <title>copy163</title>
   
     <link rel="stylesheet" href="/static/css/reset.css">
-    <link rel="stylesheet" href="http://at.alicdn.com/t/font_518606_6676bmcalnrhehfr.css">
-  
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_998285_t3g6kb6awsc.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    
+    
+    
+    
     <!--解决点击响应延时0.3s问题-->
     <script src="https://as.alipayobjects.com/g/component/fastclick/1.0.6/fastclick.js"></script>
     <script>
@@ -19,10 +25,28 @@
       if(!window.Promise) {
         document.writeln('<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"'+'>'+'<'+'/'+'script>');
       }
+      // $(document).ready(function () {
+      //取消浏览器默认行为
+      document.addEventListener('touchstart',function(event){
+        event.preventDefault();
+      }, false)
+      //点透
+      !(function () {
+        let aNodes = document.querySelectorAll('a');
+        let i = 0;
+        for (; i < aNodes.length; i++) {
+          aNodes[i].addEventListener('touchstart', function () {
+            window.location = this.href;
+          });
+        }
+      })();
+      //rem适配
+      // !(function () {
+      //   let width = document.documentElement.clientWidth;
+      //   let styleNode = document.createElement('style');
+      //   styleNode.innerHTML = 'html{font-size: ' + width / 10 + 'px !important;}';
+      //   document.head.appendChild(styleNode);
+      // })();
     </script>
-  </head>
-  <body>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
   </body>
 </html>
