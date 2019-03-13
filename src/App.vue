@@ -1,9 +1,7 @@
 <template>
   <div id="app">
     <HeaderNav v-show="$route.meta.showHeader"></HeaderNav>
-    <keep-alive>
-      <router-view></router-view>
-    </keep-alive>
+    <router-view></router-view>
     <FooterNav v-show="$route.meta.showFooter"></FooterNav>
   </div>
 </template>

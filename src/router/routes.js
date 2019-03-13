@@ -9,7 +9,14 @@ const Home = ()=>import('../pages/Home/Home.vue')
 const SearchGoods = ()=>import('../pages/Home/SearchGoods/SearchGoods.vue')
 
 const Category = ()=>import('../pages/Category/Category.vue')
+
 const Things = ()=>import('../pages/Things/Things.vue')
+const Recommend = ()=>import('../pages/Things/Recommend/Recommend.vue')
+const CollectionSecret = ()=>import('../pages/Things/CollectionSecret/CollectionSecret.vue')
+const OrderShow = ()=>import('../pages/Things/OrderShow/OrderShow.vue')
+const SuperBuyer = ()=>import('../pages/Things/SuperBuyer/SuperBuyer.vue')
+const ThingsHome = ()=>import('../pages/Things/ThingsHome/ThingsHome.vue')
+
 const Shopcar = ()=>import('../pages/Shopcar/Shopcar.vue')
 
 const Personal = ()=>import('../pages/Personal/Personal.vue')
@@ -41,7 +48,48 @@ export default [
     component: Things,
     meta: {
       showFooter: true
-    }
+    },
+    children: [
+      {
+        path: '/things/recommend',
+        component: Recommend,
+        meta: {
+          showFooter: true
+        },
+      },
+      {
+        path: '/things/collectionsecret',
+        component: CollectionSecret,
+        meta: {
+          showFooter: true
+        },
+      },
+      {
+        path: '/things/ordershow',
+        component: OrderShow,
+        meta: {
+          showFooter: true
+        },
+      },
+      {
+        path: '/things/superbuyer',
+        component: SuperBuyer,
+        meta: {
+          showFooter: true
+        },
+      },
+      {
+        path: '/things/thingshome',
+        component: ThingsHome,
+        meta: {
+          showFooter: true
+        },
+      },
+      {
+        path: '/things',
+        redirect: '/things/recommend'
+      }
+    ]
   },
   {
     path: '/shopcar',

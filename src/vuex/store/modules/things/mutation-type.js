@@ -1,0 +1,5 @@
+export const GET_TABS = "get_tabs"
+export const GET_RECOMMEND_DATA = "get_recommend_data"
+export const GET_MORE_RECOMMEND_DATA = "get_more_recommend_data"
+export const GET_COMMENT_DATA = "get_comment_data"
+export const GET_THREE_TYPE_DATA = "get_three_type_data"

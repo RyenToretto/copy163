@@ -1,4 +1,5 @@
 export default {
   homeData: [],
-  searchData: {}
+  searchData: {},
+  searchResult: []
 }

@@ -42,10 +42,10 @@
       user:{
         deep: true,
         handler (newUser, oldUser) {
-          if(/^1[0-9]{10}$/.test(newUser.email)){
+          if(/^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/.test(newUser.email)){
             this.email_tips = ""
           }else{
-            this.email_tips = "请输入正确的手机号码"
+            this.email_tips = "请输入正确的邮箱"
           }
           if(/^[a-zA-Z0-9_]{6,20}$/.test(newUser.password)){
             this.password_tips = ""
