@@ -1,0 +1,30 @@
+<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=0.5,user-scalable=no"><title>copy163</title><link rel=stylesheet href=/static/css/reset.css><link rel=stylesheet href=http://at.alicdn.com/t/font_998285_t3g6kb6awsc.css><link href=./static/css/app.4c684dad11519d516876d3cd19453823.css rel=stylesheet></head><body><div id=app></div><script src=https://as.alipayobjects.com/g/component/fastclick/1.0.6/fastclick.js></script><script>if ('addEventListener' in document) {
+        document.addEventListener('DOMContentLoaded', function() {
+          FastClick.attach(document.body);
+        }, false);
+      }
+      if(!window.Promise) {
+        document.writeln('<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"'+'>'+'<'+'/'+'script>');
+      }
+      // $(document).ready(function () {
+      //取消浏览器默认行为
+      document.addEventListener('touchstart',function(event){
+        event.preventDefault();
+      }, false)
+      //点透
+      !(function () {
+        let aNodes = document.querySelectorAll('a');
+        let i = 0;
+        for (; i < aNodes.length; i++) {
+          aNodes[i].addEventListener('touchstart', function () {
+            window.location = this.href;
+          });
+        }
+      })();
+      //rem适配
+      // !(function () {
+      //   let width = document.documentElement.clientWidth;
+      //   let styleNode = document.createElement('style');
+      //   styleNode.innerHTML = 'html{font-size: ' + width / 10 + 'px !important;}';
+      //   document.head.appendChild(styleNode);
+      // })();</script><script type=text/javascript src=./static/js/manifest.6740740ed8b531da009f.js></script><script type=text/javascript src=./static/js/vendor.1a1ee843d9296c1cc004.js></script><script type=text/javascript src=./static/js/app.c91bcd642bf2782981e1.js></script></body></html>
