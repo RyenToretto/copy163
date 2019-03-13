@@ -16,7 +16,7 @@
       </div>
       
       <div class="did_not_login">
-        <img src="//yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/noCart-a8fe3f12e5.png" alt="ShopCar">
+        <img src="https://yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/noCart-a8fe3f12e5.png" alt="ShopCar">
         <p>去添加点什么吧</p>
         <button @click="$router.push('/personal/emaillogin')">登录</button>
       </div>

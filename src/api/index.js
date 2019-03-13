@@ -1,8 +1,8 @@
 // 引入ajax模块
 import ajax from './ajax'
 
+// const prefix = 'http://m.you.163.com'    // npm run build
 //使用代理
-// const prefix = '/http://m.you.163.com'
 const prefix = '/api'
 
 // 首页数据
